@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="assets/javascript/app.js" defer></script>
+</head>
+<body class="container">
+    <div class="jumbotron text-white text-center" style="background-color:black">
+        <h1 class="display-4 font-weight-bold">Employee Data Management</h1>
+        <p class="lead font-weight-bold">A Comprehensive Director of Employee Billable Hours</p>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Current Employees
+        </div>
+        <table class="table table-hover" id="employee-table">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">Months Worked</th>
+                    <th scope="col">Monthly Rate ($)</th>
+                    <th scope="col">Total Billed ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <form>
+        <div class="card">
+            <div class="card-header">
+                Add Employee
+            </div> 
+            <div class="form-group row font-weight-bold mt-3 ml-3 mr-3">
+                <label for="employee-input" class="col-12 col-form-label">Employee Name </label>
+                <div class="col-12">
+                    <input class="form-control" type="employee" placeholder="First Name Last Name" id="EmployeeName-input">
+                </div>
+            </div>
+            <div class="form-group row font-weight-bold ml-3 mr-3">
+                <label for="role-input" class="col-12 col-form-label">Role</label>
+                <div class="col-12">
+                    <input class="form-control" type="role" placeholder="Occupation" id="Role-input">
+                </div>
+            </div>
+            <div class="form-group row font-weight-bold ml-3 mr-3">
+                <label for="startdate-input" class="col-12 col-form-label">Start Date</label>
+                <div class="col-12">
+                    <input class="form-control" type="date" placeholder="Month/Date/Year" id="StartDate-input">
+                </div>
+            </div>
+            <div class="form-group row font-weight-bold ml-3 mr-3">
+                <label for= "monthlyrate-input" class="col-12 col-form-label">Monthly Rate</label>
+                <div class="col-12">
+                    <input class="form-control" type="monthlyrate" placeholder="$" id="MonthlyRate-input">
+                </div>
+            </div>
+            <div class="form-group row justify-content-end">
+                <div class="col-2">
+                    <button id="submit" type="button" class="btn btn-primary btn-sm">Submit</button> <br> </br>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
